@@ -17,28 +17,6 @@
       * **串口 8:** 定位系统归零信号发送
   * **控制输入:** RoboMaster 遥控器 (Remote Control) / 键盘控制
 
-## 📦 目录结构（设想）
-
-```
-RoboChassis_F427/
-├── Core/
-│   ├── Inc/                    # 核心头文件 (如 main.h, stm32f4xx_it.h)
-│   └── Src/                    # 核心源文件 (如 main.c, stm32f4xx_it.c)
-├── Drivers/
-│   ├── CAN/                    # CAN 通信驱动 (电机控制)
-│   ├── UART/                   # 串口通信驱动 (RC, Lidar, RS485, etc.)
-│   ├── Remote_Control/         # 遥控器/键盘控制解析
-│   ├── Positioning_System/     # 定位系统（Rabbit结构体、PointRabbit函数库等）
-│   └── ...
-├── Hardware/                   # 硬件驱动层 (GPIO, Timer, PWM, etc.)
-│   └── ...
-├── Middlewares/                # 中间件层 (PID, Filter, etc.)
-│   └── ...
-├── User/                       # 用户应用层 (底盘控制逻辑)
-│   └── ...
-└── README.md                   # 项目说明文档
-```
-
 ## 📜 版本迭代记录
 
 ### V0.0 - 基础空白架构建立与警告修缮
